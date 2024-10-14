@@ -5,7 +5,8 @@ document
 
     const names = nameInput
       .split(/[\s,]+/)
-      .filter((name) => name.trim() !== "");
+      .filter((name) => name.length>3);
+      console.log(names);
 
     if (names.length < 3) {
       alert("Please enter at least 3 names.");
